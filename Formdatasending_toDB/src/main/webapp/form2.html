@@ -1,0 +1,172 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	 <script src="validation.js"></script>
+	
+	<style>
+	fieldset{
+	background: linear-gradient(150deg,green,yellow);
+	width:40%;
+	margin:auto;
+	border-radius: 3%;
+	padding: 10px;
+	color: solid black;
+	}
+	
+	legend{
+	background: linear-gradient(150deg,yellow,green);
+	width:15%;
+	border-radius: 10%;
+	margin: 10px;
+	padding: 10px;
+	
+	}
+	.opt
+	{
+	
+	background-color: yellow;
+	}
+	span{
+		color:red;
+	
+		}
+	</style>
+	
+	</head>
+	
+	<body>
+	
+	<fieldset> 
+	
+	<legend>
+	Registration
+	</legend>
+	
+	<form method="post" action="formservlet.java" name="formsend" onsubmit="validation()">
+	
+	 <table cellspacing="20px">
+	 
+	 <tr>
+	 <td> first_name</td>
+	 <td><input type="text" id="fname1" name="fname" placeholder="enter the first name">  </td>  
+	<td> <span id="f_error"> </span></td>
+	  </tr>
+	  
+	  <tr>
+	 <td> last_name</td>
+	 <td><input type="text" name="lname" placeholder="enter the last name">
+	   
+	 </td>
+	 <td> <span id="l_error"> </span> </td>
+	  </tr>
+	  
+	  
+	 <tr>
+	 <td> password</td>
+	 <td><input type="text" name="passw" placeholder="enter the last name"></td>
+	 <td><span id="p_error"> </span>   </td>
+	  </tr>
+	  
+	  <tr>
+	 <td> email</td>
+	 <td><input type="email" name="email" placeholder="enter the mail "></td>
+	 <td><span id="e_error"> </span> </td>
+	  </tr>
+	  
+	  <tr>
+	 <td>mobile</td>
+	 <td><input type="tel" name="tele" placeholder="enter the telephone"></td>
+	 <td><span id="m_error"> </span> </td>
+	  </tr>
+	  
+	  <tr>
+        <td>gender</td>
+        <td>
+            <select name="gender1">
+             <option value=" ">Choose your gender </option>
+                <option value="1" >male</option>
+                <option value="2">female</option>
+                <option value="3">other</option>
+
+            </select>
+        </td>
+        <td><span id="g_error"> </span> </td>
+     </tr>
+     <tr>
+        <td>skills</td>
+        <td>
+            <select name="skills1" >
+             <option >choose your course</option>
+                <option  value="c">C</option>
+                <option  value=" jfs">Java Full Stack</option>
+                <option  value="pfs "> python Full Stack</option>
+                <option  value="c++ ">C++</option>
+                <option  value="oracle ">Oracle</option>
+
+            </select>
+        </td>
+    <td><span id="s_error"> </span> </td>
+	  </tr>
+     
+     
+	  
+	  
+	 <tr>
+	 <td>dob</td>
+	 <td><input type="date" id="dob" name="dob"></td>
+	 <td><span id="d_error"> </span> </td>
+	 </tr>
+	  
+	  
+	  
+	   <tr>
+	   <td> Country</td>
+	   <td><select name="country" >
+	 
+	   <option> choose your country from here</option> 
+	  
+	  
+	    <option value="IND"> INDIA   </option>
+	    <option value="USA"> AMERICA</option>
+	     <option value="UK">LANDON</option>
+	      <option value="SWIS"> SWIS</option>
+	       <option value="AUS"> AUSTRELIYA</option>
+	       </select>
+	       </td>
+	
+	  <td><span id="c_error"> </span> </td>
+	   </tr>
+	   
+	  <tr> 
+	  <td>upload a file</td>
+	  <td> <input type="file"  name="file" ></td>
+	  <td><span id="up_error"> </span> </td>
+	  </tr>
+	  
+	  
+	  <tr>
+	  <td> startdate</td>
+	  <td><input type="text" name="time1" ></td>
+	  <td><span id="sd_error"> </span> </td>
+	  </tr>
+	  
+	  <tr>
+	  
+	   <td> enddate</td>
+	   <td><input type="text" name="time2" ></td>
+	   <td><span id="ed_error"> </span> </td>
+	   </tr>
+	 
+	  <tr>
+	  <td> <input type="submit" value="Register" > </td>
+	  <td><input type="reset" value="clear" ></td>
+	  
+	  </tr>
+	
+	 </table>
+	</form>
+	 </fieldset>
+	</body>
+	</html>
